@@ -93,7 +93,7 @@
       <!-- 用户信息 -->
       <userData />
       <!-- TitleBar -->
-      <TitleBar />
+      <TitleBar v-if="checkPlatform.electron()" />
     </div>
   </nav>
 </template>
@@ -102,6 +102,7 @@
 import { NScrollbar } from "naive-ui";
 import { storeToRefs } from "pinia";
 import { siteStatus, siteSettings } from "@/stores";
+import { checkPlatform } from "@/utils/helper";
 import { useRouter } from "vue-router";
 import Menu from "@/components/Global/Menu";
 import packageJson from "@/../package.json";

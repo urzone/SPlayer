@@ -15,11 +15,8 @@ coverage
 *.local
 out
 .env
-components.d.ts
 auto-imports.d.ts
-
-/cypress/videos/
-/cypress/screenshots/
+components.d.ts
 
 # Editor directories and files
 .vscode/*
@@ -31,3 +28,5 @@ auto-imports.d.ts
 *.njsproj
 *.sln
 *.sw?
+.env.development
+.env.production
